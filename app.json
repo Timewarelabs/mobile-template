@@ -1,0 +1,39 @@
+{
+  "name": "mobile-template",
+  "expo": {
+    "name": "mobile-template",
+    "slug": "mobile-template",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash_screen.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#F6FCFF"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "android": {
+      "package": "com.timeware.mobile-template",
+      "versionCode": 1,
+      "useNextNotificationsApi": true,
+      "icon": "./assets/icon.png",
+      "permissions": ["RECEIVE_BOOT_COMPLETED", "NOTIFICATIONS"]
+    },
+    "notification": {
+      "icon": "./assets/icon.png",
+      "color": "#0088FC",
+      "androidMode": "default",      
+      "iosDisplayInForeground": true
+    },
+    "plugins": [
+      ["expo-notifications", {
+        "icon": "./assets/icon.png",
+        "color": "#0088FC",
+        "sounds": ["./assets/sounds/notification-1.wav", "./assets/sounds/notification-2.wav"],
+        "androidMode": "default"
+      }]
+    ]
+  }
+}
